@@ -1,4 +1,4 @@
-package lesson11;
+package lesson10;
 
 public abstract class AbstractPerson {
     protected String lastName;
@@ -12,7 +12,4 @@ public abstract class AbstractPerson {
         System.out.println(lastName);
     }
 
-    public String getLastName() {
-        return lastName;
-    }
 }

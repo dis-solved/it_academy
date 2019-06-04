@@ -13,6 +13,10 @@ public class BankAcc {
     }
 
     public double getBalance() {
+
+        if (balance < 0){
+            throw new IllegalStateException("Balance is negative");
+        }
         return balance;
     }
 }

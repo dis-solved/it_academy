@@ -1,6 +1,11 @@
 package lesson16;
+/**
+ * By default add ads the element as last to linked list, but you can also use addFirst/addLast methods (but they will
+ * not work with ArrayList)
+ */
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -12,6 +17,10 @@ public class FruitListApp {
         fruits.add(new Fruit("apple"));
         fruits.add(new Fruit("banana"));
         fruits.add(new Fruit("peach"));
+        ((LinkedList) fruits).addFirst(new Fruit("blueberries"));
+        System.out.println(fruits);
+        Collections.sort(fruits);
+        Collections.reverse(fruits);
 
         System.out.println(fruits);
         System.out.println("contains apple: " + containsApple(fruits));

@@ -10,7 +10,7 @@ public class Person extends AbstractPerson {
 //    access modifiers: incapsulation
 //    public - least restrictive, allows access from everywhere
 //    protected - for the same package and inheriting classes
-//    default (absence of am)
+//    default (absence of access modifier)
 //    private - most restrictive
 
     // inner classes + interfaces + polimorphism
@@ -45,16 +45,29 @@ public class Person extends AbstractPerson {
         this.age = age;
     }
 
+    public boolean isPersonAdult(){
+        return getAge() >= 18;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+
+    @Override
+    public void printName(){
+        System.out.println(firstName);
+    }
+
     public void printFullName(){
-        System.out.println(firstName + ", " + lastName);
+        System.out.println(firstName + " " + lastName);
     }
     public void printFullName(String greeting){
         System.out.println(greeting + " ");
         printFullName();
-    }
-    @Override
-    public void printName(){
-        System.out.println(firstName);
     }
 
     public void setAge(int age){
@@ -75,7 +88,14 @@ public class Person extends AbstractPerson {
         return Objects.hash(firstName);
     }
 
-    //    @Override
+    public int getAge() {
+        return age;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+//    @Override
 //    public boolean equals(Object object){
 //        // 1. reflective: x.equals(x) should return true
 //        // 2. transitive: x,y,z; if x.equals(y) and y.equals(z) => x.equals(z)

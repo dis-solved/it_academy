@@ -1,8 +1,6 @@
-package lesson11;
+package lesson10;
 
-public final class Client extends Person {
-
-    static int count = 1000;
+public class Client extends Person {
 
     public Client(String firstName, String lastName){
         super(firstName,lastName);

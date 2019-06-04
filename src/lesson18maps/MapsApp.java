@@ -1,7 +1,7 @@
 package lesson18maps;
 
 /**
- * Hashmap (Array of buckets, which are filled with linkedList) hashcode and equals methods are important to be correctly implemented(default capacity: 16, loadFactor: 0.75)
+ * Hashmap (Array of buckets, which are filled with linkedList) hashcode and equals methods are important to be correctly implemented(default capacity: 16, loadFactor: 0.75) - if objects are equal, they need to have the same hashcode, but it doesn't work the other way round
  * this means that capacity will be doubled once the load factor is reached
  * Enum Map - uses enums as keys
  * Treemap should be used when you need ordering of keys

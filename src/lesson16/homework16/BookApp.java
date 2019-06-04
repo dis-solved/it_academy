@@ -9,14 +9,17 @@ public class BookApp {
         Set<Book> books = new HashSet<>();
         Scanner scanner = new Scanner(System.in);
 
-        do {
+        while (true){
             System.out.println("What’s your favourite book?");
             String title = scanner.nextLine();
+
+            if ("".equals(title)) {
+                break;
+            }
             System.out.println("Who’s the author?");
             String author = scanner.nextLine();
             books.add(new Book(title, author));
-            System.out.println("Enter 'Y' if you want to add more books, otherwise press enter");
-        } while (!scanner.nextLine().equals(""));
+        }
 
         Set authors = new HashSet();
         for (Book book: books){

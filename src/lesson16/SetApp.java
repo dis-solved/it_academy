@@ -6,8 +6,8 @@ import java.util.Set;
 import java.util.TreeSet;
 
 /**
- * HashSet - order is almost random, uses hasg based collection
- * TreeSet - elements need to be comparable (implement Comparable or provide comparator)
+ * HashSet - order is almost random, uses hasg based collection, allows null elements
+ * TreeSet - elements need to be comparable (implement Comparable or provide comparator), doesn't allow null
  */
 
 public class SetApp {

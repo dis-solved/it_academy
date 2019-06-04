@@ -11,5 +11,4 @@ public class Temperature {
         double temperatureInFarenheit = (temperatureInCelsius * 9 / 5) + 32;
         return temperatureInFarenheit;
     }
-
 }

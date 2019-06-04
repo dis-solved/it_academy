@@ -1,15 +1,9 @@
-package lesson11;
-
-import lesson11.AbstractPerson;
-import lesson11.Client;
-import lesson11.Person;
+package lesson10;
 
 public class PersonApp {
     public static void main(String[] args) {
         AbstractPerson abstractPerson = new Person("Paul","Smith");
         abstractPerson.printName();
-
-
 
 
         Person john = new Person("John","Smith",25);

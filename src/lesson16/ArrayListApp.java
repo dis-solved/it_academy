@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ArrayListApp {
     public static void main(String[] args) {
-        List list = new LinkedList();
+        List list = new ArrayList();
 //        ArrayList list = new ArrayList(100);
 
 
@@ -17,6 +17,7 @@ public class ArrayListApp {
         list.add(5);
         list.add(7);
         list.add(11);
+
 
         System.out.println(list.size());
         System.out.println(list);
